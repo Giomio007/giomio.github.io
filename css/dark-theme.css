@@ -1,0 +1,96 @@
+/* Dark Theme Styles */
+html[data-theme="dark"] {
+    --primary-color: #8c7ae6;
+    --secondary-color: #9c88ff;
+    --accent-color: #fd79a8;
+    --background-color: #121212;
+    --secondary-background: #1e1e1e;
+    --text-color: #f5f5f5;
+    --text-light: #aaaaaa;
+    --border-color: #2c2c2c;
+    --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    --hover-color: #7963e4;
+}
+
+html[data-theme="dark"] .simulator-container {
+    background-color: #1a1a1a;
+}
+
+html[data-theme="dark"] .chat-area {
+    background-color: #252525;
+}
+
+html[data-theme="dark"] .message-content {
+    background-color: #2a2a2a;
+}
+
+html[data-theme="dark"] .ai-message .message-content {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+html[data-theme="dark"] .service-card,
+html[data-theme="dark"] .feature-card,
+html[data-theme="dark"] .testimonial-card {
+    background-color: #1a1a1a;
+}
+
+html[data-theme="dark"] .feature-icon {
+    background-color: #252525;
+}
+
+html[data-theme="dark"] .simulator-select,
+html[data-theme="dark"] .form-group input,
+html[data-theme="dark"] .form-group textarea,
+html[data-theme="dark"] .user-input input {
+    background-color: #2a2a2a;
+    color: var(--text-color);
+    border-color: #3a3a3a;
+}
+
+html[data-theme="dark"] .progress-bar {
+    background-color: #2a2a2a;
+}
+
+html[data-theme="dark"] .simulator-header {
+    background-color: var(--primary-color);
+}
+
+html[data-theme="dark"] .start-btn {
+    background-color: #2a2a2a;
+    color: var(--text-color);
+}
+
+html[data-theme="dark"] .start-btn:hover {
+    background-color: #3a3a3a;
+}
+
+html[data-theme="dark"] .testimonial-content::before {
+    color: rgba(255, 255, 255, 0.1);
+}
+
+html[data-theme="dark"] .dot {
+    background-color: #444;
+}
+
+html[data-theme="dark"] .dot.active {
+    background-color: var(--primary-color);
+}
+
+/* Dark theme specific transition animations */
+@keyframes fadeInDark {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html[data-theme="dark"] .feature-card,
+html[data-theme="dark"] .service-card,
+html[data-theme="dark"] .testimonial-card.active {
+    animation: fadeInDark 0.5s ease-out;
+}
