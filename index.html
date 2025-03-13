@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профимулятор - Симулятор профессиональных собеседований</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M14 9a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"></path>
+                        <path d="M9.5 13.5L7 17"></path>
+                        <path d="M14.5 13.5L17 17"></path>
+                        <path d="M12 12v4"></path>
+                        <path d="M10 7.5l2-2.5 2 2.5"></path>
+                    </svg>
+                    <h1>Профимулятор</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Главная</a></li>
+                    <li><a href="#features">Функции</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#about">О проекте</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="auth-btn login-btn">Вход</a>
+                    <a href="register.html" class="auth-btn register-btn">Регистрация</a>
+                </div>
+                <div class="theme-toggle">
+                    <button id="theme-toggle-btn">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Симулятор собеседования с ИИ</h2>
+                <p>Готовьтесь к своему следующему собеседованию с помощью нашей передовой технологии ИИ. Получайте обратную связь в режиме реального времени, персонализированные советы и повышайте уверенность перед настоящим собеседованием.</p>
+                <div class="cta-buttons">
+                    <a href="profession-selection.html" class="btn primary-btn">Попробовать симулятор</a>
+                    <a href="#features" class="btn secondary-btn">Узнать больше</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <svg width="400" height="300" viewBox="0 0 500 400" fill="none" stroke="currentColor">
+                    <rect x="50" y="50" width="400" height="300" rx="10" stroke-width="2"></rect>
+                    <line x1="100" y1="100" x2="400" y2="100" stroke-width="2"></line>
+                    <circle cx="350" cy="75" r="15" stroke-width="2"></circle>
+                    <rect x="100" y="150" width="80" height="30" rx="5" stroke-width="2"></rect>
+                    <rect x="250" y="150" width="120" height="30" rx="5" stroke-width="2"></rect>
+                    <rect x="100" y="200" width="150" height="30" rx="5" stroke-width="2"></rect>
+                    <rect x="100" y="250" width="250" height="30" rx="5" stroke-width="2"></rect>
+                    <circle cx="450" cy="200" r="10" stroke-width="2"></circle>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulator" class="simulator">
+        <div class="container">
+            <h2 class="section-title">Симулятор собеседования</h2>
+            <div class="simulator-container">
+                <div class="simulator-content text-center">
+                    <div class="simulator-preview">
+                        <img src="assets/interview-minimal.svg" alt="Превью собеседования" class="preview-image">
+                        <h3>Подготовьтесь к собеседованию с Профимулятором</h3>
+                        <p>Практикуйтесь с нашим интеллектуальным интервьюером, который адаптируется к вашим ответам и дает полезные рекомендации.</p>
+                        <div class="simulator-options">
+                            <div class="option-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                <span>Более 500 вопросов по различным специальностям</span>
+                            </div>
+                            <div class="option-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                <span>Детальный анализ ваших ответов</span>
+                            </div>
+                            <div class="option-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                <span>Сохранение результатов в личном кабинете</span>
+                            </div>
+                        </div>
+                        <a href="profession-selection.html" class="btn primary-btn simulator-start-btn">Начать собеседование</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Ключевые функции</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 16l4-4-4-4"></path>
+                            <path d="M8 12h8"></path>
+                        </svg>
+                    </div>
+                    <h3>Ответы в реальном времени</h3>
+                    <p>Испытайте реалистичные беседы на собеседовании с нашим ИИ, который адаптируется к вашим ответам и задает естественные уточняющие вопросы.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                        </svg>
+                    </div>
+                    <h3>Персонализированная обратная связь</h3>
+                    <p>Получайте подробную обратную связь о вашем выступлении на собеседовании, включая сильные стороны и области для улучшения.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Аналитика производительности</h3>
+                    <p>Отслеживайте свой прогресс с течением времени с подробной аналитикой ваших собеседований и наблюдайте, как вы совершенствуетесь.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Вопросы для конкретных отраслей</h3>
+                    <p>Практикуйтесь с вопросами, адаптированными к вашей конкретной отрасли, должности и уровню опыта для наиболее релевантной подготовки.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Услуги по подготовке к собеседованию</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Технические собеседования</h3>
+                    <p>Специализированная подготовка к техническим ролям, включая задачи по программированию, вопросы по системному дизайну и обсуждение алгоритмов.</p>
+                    <a href="#" class="service-link">Узнать больше</a>
+                </div>
+                <div class="service-card">
+                    <h3>Поведенческие собеседования</h3>
+                    <p>Практика ответов на вопросы в формате STAR, которые оценивают ваши мягкие навыки, прошлый опыт и то, как вы справляетесь с рабочими ситуациями.</p>
+                    <a href="#" class="service-link">Узнать больше</a>
+                </div>
+                <div class="service-card">
+                    <h3>Оценка лидерства</h3>
+                    <p>Комплексная подготовка к управленческим и руководящим должностям, с акцентом на стиль руководства, стратегическое мышление и управление командой.</p>
+                    <a href="#" class="service-link">Узнать больше</a>
+                </div>
+                <div class="service-card">
+                    <h3>Коучинг по собеседованиям</h3>
+                    <p>Индивидуальные коучинг-сессии с экспертами по карьере для улучшения навыков собеседования, языка тела и коммуникационных техник.</p>
+                    <a href="#" class="service-link">Узнать больше</a>
+                </div>
+                <div class="service-card">
+                    <h3>Анализ резюме</h3>
+                    <p>Анализ резюме с помощью ИИ, который помогает оптимизировать ваше резюме для систем отслеживания кандидатов и выделяет области для улучшения.</p>
+                    <a href="#" class="service-link">Узнать больше</a>
+                </div>
+                <div class="service-card">
+                    <h3>Тренировочные собеседования</h3>
+                    <p>Реалистичные симуляции собеседований с вопросами, специфичными для отрасли, и всесторонней обратной связью для повышения вашей уверенности.</p>
+                    <a href="#" class="service-link">Узнать больше</a>
+                </div>
+            </div>
+            <div class="services-cta">
+                <a href="#" class="btn primary-btn">Посмотреть все услуги</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">О проекте Профимулятор</h2>
+                <p>Профимулятор был разработан, чтобы помочь соискателям обрести уверенность и эффективно подготовиться к собеседованиям. Наша платформа с искусственным интеллектом предоставляет реалистичные симуляции собеседований, персонализированную обратную связь и вопросы для конкретных отраслей, чтобы помочь вам выделиться на конкурентном рынке труда.</p>
+                <p>Используя передовые технологии обработки естественного языка и машинного обучения, наша система анализирует ваши ответы, тон и содержание, чтобы предоставить практические рекомендации, которые улучшают вашу эффективность на собеседовании.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>5000+</h3>
+                        <p>Вопросов для собеседований</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>200+</h3>
+                        <p>Охваченных отраслей</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>98%</h3>
+                        <p>Процент успеха</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M14 9a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"></path>
+                        <path d="M9.5 13.5L7 17"></path>
+                        <path d="M14.5 13.5L17 17"></path>
+                        <path d="M12 12v4"></path>
+                        <path d="M10 7.5l2-2.5 2 2.5"></path>
+                    </svg>
+                    <h2>Профимулятор</h2>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Быстрые ссылки</h3>
+                        <ul>
+                            <li><a href="#home">Главная</a></li>
+                            <li><a href="#simulator">Симулятор</a></li>
+                            <li><a href="#features">Функции</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Услуги</h3>
+                        <ul>
+                            <li><a href="#">Технические собеседования</a></li>
+                            <li><a href="#">Поведенческие собеседования</a></li>
+                            <li><a href="#">Анализ резюме</a></li>
+                            <li><a href="#">Коучинг по собеседованиям</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Компания</h3>
+                        <ul>
+                            <li><a href="#about">О нас</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Условия использования</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Профимулятор. Все права защищены.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
